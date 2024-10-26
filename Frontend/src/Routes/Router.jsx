@@ -57,7 +57,7 @@ function RouterApp() {
   return (
     <AppState.Provider value={{ user, isLoggedIn, handleLogout, handleLogin }}>
       <Routes>
-        
+        <Route path="/" element={<Auth />} />
         <Route path="/auth" element={<Auth />} />
         <Route path="/questions/ask" element={<Question />} />
         <Route
